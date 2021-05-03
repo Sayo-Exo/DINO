@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" onclick="jump()">
+<head>
+	<meta charset="UTF-8">
+	<title>DINO</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="game">
+		<div id="character"></div>
+		<div id="block"></div>
+	</div>
+	<p>
+		<h2>
+			<div id="help">
+				<br><br>
+				Controls:<br><br>
+				R - <a href="javascript:lose('You lost. (RESET)')">Reset</a><br>
+				Left Mouse Button/Spacebar - <a href="javascript:jump()">Jump</a><br>
+				<br><br>
+				<p>Score: <div id="score"></div></p>
+				<p>Best score: <div id="bestScore"></div></p>
+				<br><br><br><br><p><a href="javascript:resetData()">Reset Data</a></p>
+			</div>
+		</h2>
+	</p>
+</body>
+<script src="script.js"></script>
+</html>

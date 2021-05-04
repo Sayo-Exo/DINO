@@ -99,20 +99,20 @@ function debug() {
 }
 
 function jump() {
-    if (character.isAired || !canJump)
+    if (character.isaired || !canJump)
         return;
-    character.isAired = true;
+    character.isaired = true;
     character.classList.add("animate");
     setTimeout(function(){
         character.classList.remove("animate");
-        character.isAired = false;
+        character.isaired = false;
     },500);
 }
 
 document.onkeypress = function(e){
     e = e || window.event;
-    var key = e.keyCode
-    // console.log(key)
+    var key = e.keyCode;
+    // console.log(key);
     if (key == keys["jump"])
         jump();
     if (key == keys["retry"])
